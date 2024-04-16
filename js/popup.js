@@ -1,7 +1,7 @@
 function sendFalsePositiveReport(goodURL){
     $.ajax({
         type: "POST",
-        url: "http://192.168.43.55/hello", //hotspot
+        url: "http://127.0.0.1/hello", //hotspot
         contentType: "application/json",
         data: JSON.stringify({URLText: goodURL}),
         dataType: "json",
@@ -17,7 +17,7 @@ function sendFalsePositiveReport(goodURL){
   function checkURLFunction(stringURL){
     $.ajax({
         type: "POST",
-        url: "http://192.168.43.55:5000", //hotspot
+        url: "http://127.0.0.1:5501", //hotspot
         contentType: "application/json",
         data: JSON.stringify({URLText: stringURL}),
         dataType: "json",

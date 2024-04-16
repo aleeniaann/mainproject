@@ -5,7 +5,7 @@ function checkURLAndSendToBackground(stringURL) {
   // Send the URL to the background script for checking
   $.ajax({
       type: "POST",
-      url: "http://192.168.1.105:5000", // Replace with your server URL
+      url: "http://127.0.0.1:5501", // Replace with your server URL
       contentType: "application/json",
       data: JSON.stringify({ URLText: stringURL }),
       dataType: "json",
